@@ -32,7 +32,11 @@ Visit the following URLs with the webapp running to view the various demos:
 * http://localhost:3000/demo/grid
 
 
-# Forking class repo and setting upstream remote
+
+# About Git
+
+## Forking class repo and setting upstream remote
+
 1. Make sure you have git installed: https://git-scm.com/downloads
 2. Go to the git repo for this class: https://github.com/aprilbingham-neu/seainfo6150-webapp
 3. Click “Fork” to create your copy of the repo
@@ -46,13 +50,15 @@ cd seainfo6150-webapp
 git remote add upstream https://github.com/aprilbingham-neu/seainfo6150-webapp
 ```
 
-# Looking at a list of all your branches
+## Looking at a list of all your branches
+
 ```
 cd seainfo6150-webapp
 git branch
 ```
 
-# Creating a branch from master
+## Creating a branch from master
+
 ```
 cd seainfo6150-webapp
 git checkout master
@@ -60,14 +66,16 @@ git pull origin master
 git checkout --b [new branch name]
 ```
 
-# Creating a branch from a branch other than master
+## Creating a branch from a branch other than master
+
 ```
 cd seainfo6150-webapp
 git checkout [branch to create branch from]
 git checkout --b [new branch name]
 ```
 
-# Pushing your changes to your fork
+## Pushing your changes to your fork
+
 Make changes to your branch, then
 ```
 git add .
@@ -75,7 +83,8 @@ git commit -m “[commit name]”
 git push origin [branch name]
 ```
 
-# Pulling updates from main repo
+## Pulling updates from main repo
+
 ```
 cd seainfo6150-webapp
 git pull upstream master
@@ -91,6 +100,10 @@ npm start
 ---
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+> To download Node.js first if npm install doesn't work
+>
+> https://www.jianshu.com/p/c36666b306aa
 
 ## Available Scripts
 
