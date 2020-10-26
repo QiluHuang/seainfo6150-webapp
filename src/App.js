@@ -11,6 +11,7 @@ function App() {
       // performs a GET request
       const response = await fetch("http://demo1390455.mockable.io/articles");
       const responseJson = await response.json();
+      console.log(responseJson);
       setFetchedData(Object.values(responseJson));
     };
 
@@ -21,9 +22,7 @@ function App() {
 
   return isEmpty(fetchedData) ? null : (
     <div className="App">
-      <Switch>
-        <Route exact path="/articlelist"><ArticleList articles={fetchedData} /></Route>
-      </Switch>
+      <ArticleList articles={fetchedData} />
     </div>
   );
 }
