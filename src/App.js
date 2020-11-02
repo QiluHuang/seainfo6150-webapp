@@ -21,9 +21,7 @@ function App() {
 
   return isEmpty(fetchedData) ? null : (
     <div className="App">
-      <Switch>
-        <Route exact path="/articlelist"><ArticleList articles={fetchedData} /></Route>
-      </Switch>
+      <ArticleList articles={fetchedData} />
     </div>
   );
 }

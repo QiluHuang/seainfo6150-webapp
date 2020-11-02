@@ -1,4 +1,11 @@
 .container {
+    display: flex;
+    flex-direction: column;
+    justify-self: stretch;
+    
+
+  
+
     background-image: linear-gradient(to right, rgba(204, 0, 0, .5), #eee 20% ) ;
     border: 1px solid #c00;
     border-radius: 10px;
@@ -7,13 +14,26 @@
     padding: 10px;
 }
 
-.container + .container {
+/* .container + .container {
     margin-top: 30px;
+} */
+
+.article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }
+
+
 
 .title {
     color: #c00;
     margin: 0 0 20px;
+    text-decoration: underline;
+
+    display: flex;
+    align-items: flex-start;
 }
 
 .text {
@@ -24,3 +44,4 @@
 .time {
     font-weight: bold;
 }
+
