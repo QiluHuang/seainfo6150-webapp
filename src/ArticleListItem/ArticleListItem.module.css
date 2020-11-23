@@ -1,79 +1,68 @@
 .container {
-    background-image: linear-gradient(to right, rgba(204, 0, 0, .5), #eee 20% ) ;
-    border: 1px solid #c00;
-    border-radius: 10px;
-    box-shadow: 0 5px 10px 5px rgba(0, 0, 0, .3);
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 10px;
+  background-image: linear-gradient(to right, rgba(204, 0, 0, 0.5), #eee 20%);
+  border: 1px solid #c00;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.3);
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 30px;
 }
 
 .article {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-between;
-    height: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  height: 100%;
 }
 
 .wrapper {
-    flex: 1;
+  flex: 1;
 }
 
 .title {
-    color: #c00;
-    margin: 0 0 20px;
+  color: #c00;
+  font-size: 2em;
+  margin: 0 0 20px;
+  text-decoration: underline;
 }
 
 .text {
-    font-size: 12px;
-    margin: 0 0 20px;
+  font-size: 12px;
+  margin: 0 0 20px;
 }
 
 .time {
-    font-weight: bold;
+  font-weight: bold;
 }
 
+.upper_image {
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 
-@media (max-width: 600px) {
-    .title {
-        font-size: 70%;
-    }
+@media screen and (min-width: 525px) {
+  .container {
+    padding: 20px;
   }
-  
-  @media (min-width: 600px) and (max-width: 768px) {
-    .title {
-        font-size: 80%;
-    }
+  .title {
+    font-size: 1.5em;
   }
-  
-  @media (min-width: 768px) and (max-width: 1390px) {
-    .title {
-        font-size: 90%;
-    }
-    .text {
-        font-size: 0.6rem;
-    }
-  }
+}
 
-  @media (min-width: 1390px) and (max-width: 1500px) {
-    .title {
-        font-size: 120%;
-    }
-    .text {
-        font-size: 0.9rem;
-    }
+@media screen and (min-width: 800px) {
+  .container {
+    padding: 15px;
   }
+  .title {
+    font-size: 1em;
+  }
+}
 
-  @media (min-width: 1500px) and (max-width: 1619px) {
-    .title {
-        font-size: 120%;
-    }
-    .text {
-        font-size: 1rem;
-    }
+@media screen and (min-width: 1150px) {
+  .container {
+    padding: 10px;
   }
-
-  @media (min-width: 1619px) {
-    .text {
-        font-size: 1.1rem;
-    }
+  .title {
+    font-size: 0.8em;
   }
+}

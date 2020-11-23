@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ArticleListItem tests renders correctly with article 1`] = `
+exports[`ArticleListItem tests renders correctly 1`] = `
 <div>
   <li
     class="container"
